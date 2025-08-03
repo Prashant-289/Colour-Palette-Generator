@@ -54,6 +54,25 @@ body{
     background-color: red;
     border: 2px solid black;
 }
+.palette:nth-child(1) .color {
+  background-color: #FF6B6B; 
+}
+
+.palette:nth-child(2) .color {
+  background-color: #FFD93D; 
+}
+
+.palette:nth-child(3) .color {
+  background-color: #6BCB77; 
+}
+
+.palette:nth-child(4) .color {
+  background-color: #4D96FF; 
+}
+
+.palette:nth-child(5) .color {
+  background-color: #843B62; 
+}
 
 .colorcontainer{
     display: flex;
