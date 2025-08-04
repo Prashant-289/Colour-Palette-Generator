@@ -1,86 +1,101 @@
-*{
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-     box-sizing: border-box;
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(104, 186, 218);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
-.container{
+
+.container {
     background-color: white;
     border-radius: 10px;
-    margin: 50px auto;
-    max-width: 600px;
-    box-sizing: border-box;
-    width: 90%;
-   
+    width: 50vw;
+    height: 45vh;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.heading{
+
+.heading {
     text-align: center;
-    padding: 10px 10px;
+    font-size: 2vw;
+    
 }
-.btn{
-    background: linear-gradient(to left, #6a11cb, #2575fc);;
+
+.btn {
+    background: linear-gradient(to left, #6a11cb, #2575fc);
     color: white;
-    padding: 10px 20px;
+    padding: 0.8vw 2vw;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     transition: transform 0.3s ease;
-    margin: 10px;
+    margin: 0 auto;
+    width: fit-content;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.1);
 }
-.color{
-    width: 6.5vw;
-    height: 7vw;
+
+.color {
+    height: 13vh;
     background-color: aqua;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.colorid{
+
+.colorid {
     background-color: whitesmoke;
-    display: inline-block;
-    width: inherit;
-    max-width: inherit;
     display: flex;
     justify-content: space-between;
-    padding: 2.5px 2.5px;
-    box-sizing: border-box;
+    align-items: center;
+    padding: 1vh 1vw;
+    font-size: 1vw;
 }
-.palatte{
-    background-color: red;
-    border: 2px solid black;
+
+.palette {
+    flex: 1;
+    margin: 0 0.5vw;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 8vw;
+    max-width: 8vw;
 }
+
 .palette:nth-child(1) .color {
-  background-color: #FF6B6B; 
+    background-color: #FF6B6B;
 }
 
 .palette:nth-child(2) .color {
-  background-color: #FFD93D; 
+    background-color: #FFD93D;
 }
 
 .palette:nth-child(3) .color {
-  background-color: #6BCB77; 
+    background-color: #6BCB77;
 }
 
 .palette:nth-child(4) .color {
-  background-color: #4D96FF; 
+    background-color: #4D96FF;
 }
 
 .palette:nth-child(5) .color {
-  background-color: #843B62; 
+    background-color: #843B62;
 }
 
-.colorcontainer{
+.colorcontainer {
     display: flex;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
+    height: auto;
 }
