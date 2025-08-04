@@ -2,21 +2,22 @@
     padding: 0px;
     border: 0px;
     margin: 0px;
-    
+     box-sizing: border-box;
 }
 body{
     background-color: rgb(104, 186, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     background-color: white;
-    display: inline-block;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 40%;
+    margin: 50px auto;
+    max-width: 600px;
+    box-sizing: border-box;
+    width: 90%;
+   
 }
 .heading{
     text-align: center;
@@ -45,10 +46,12 @@ body{
 .colorid{
     background-color: whitesmoke;
     display: inline-block;
-    width: 100%;
+    width: inherit;
+    max-width: inherit;
     display: flex;
     justify-content: space-between;
     padding: 2.5px 2.5px;
+    box-sizing: border-box;
 }
 .palatte{
     background-color: red;
